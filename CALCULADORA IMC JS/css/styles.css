@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/mountains-8314422_1920.png);
+    background-position: center;
+    background-position-y: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #ffffff80;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* IMC FORM */
+
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+
+}
+
+.form-control input {
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.action-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: #728996;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    flex: 1;
+}
+
+button:hover {
+    opacity: 1rem;
+    border: 3px solid #728996;
+    background-color: #fff;
+    color: #728996;
+}
+
+/* TABELA DE IMC */
+
+#clean-btn {
+    background-color: #333;
+}
+
+#result-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.43rem;
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+}
+
+#imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header {
+    font-weight: bold;
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+    max-width: 80px;
+}
+
+#back-btn {
+    align-self: center;
+}
+
+.good {
+    color: #12db34;
+}
+
+.low {
+    color: #dbce12;
+}
+
+.medium {
+    color: #db6212;
+}
+
+.high {
+    color: #db1912;
+}
